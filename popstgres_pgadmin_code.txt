@@ -1,0 +1,15 @@
+CREATE TABLE users (
+    id_user INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL
+);
+
+SELECT * FROM users ORDER BY name ASC
+
+INSERT INTO users (name, email)
+VALUES ('Amália', 'amalia@teste.com')
+RETURNING *
+
+DELETE FROM users
+WHERE id_users = 2
+RETURNING *

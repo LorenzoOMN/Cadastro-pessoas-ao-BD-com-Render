@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="https://www.cps.sp.gov.br/favicon.ico">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <main class="card">
+        <h1 class="title">Cadastro de Usuarios</h1>
+        <input placeholder="Digite o nome do usuário" type="text" class="user-input" id="user-name">
+        <input placeholder="Digite o E-mail do usuário" type="email" class="user-input" id="user-email">
+
+        <div class="actions">
+            <button id="save-button" class="action-button action-button-primary">Salvar</button>
+            <button id="clear-button" class="action-button action-button-secondary">Limpar</button>
+        </div>
+
+        <section class="result" id="result"></section>
+
+        <section class="user-list">
+            <table class="user-table">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>E-mail</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+
+                <tbody id="users-table-body"></tbody>
+            </table>
+        </section>
+    </main>
+    <script src="/assets/js/main.js"></script>
+</body>
+
+</html>
