@@ -43,7 +43,7 @@ function renderUsers(users) {
                     <td>${users[i].name}</td>
                     <td>${users[i].email}</td>
                     <td class="user-table-actions-cell">
-                    <button class="delete-user-button" onClick="deleteUser(${users[i].id_users})">
+                    <button class="delete-user-button" onClick="deleteUser(${users[i].id_user})">
                         <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
                             <path d="M9 3h6l1 2h4v2H4V5h4l1-2zm1 6h2v8h-2V9zm4 0h2v8h-2V9zM7 9h2v8H7V9zm1 12a2 2 0 0 1-2-2V8h12v11a2 2 0 0 1-2 2H8z"
                                 fill="currentColor"
